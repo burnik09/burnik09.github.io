@@ -1,0 +1,201 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, Verdana, sans-serif;
+    width: 100%;
+    background: #2f3030;
+}
+nav{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+#navigation.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #424240;
+    border-bottom: solid 2px lightgray;
+}
+nav > ul{
+    margin-left: 15%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+li{
+    padding-top: 10px;
+    width: 50%;
+    padding-left: 5%;
+    height: 30px;
+}
+li:nth-of-type(2){
+    padding-left: 7%;
+}
+li:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+nav > ul > li:nth-of-type(1){
+    width: 47%;
+    border-right: solid 2px lightgrey;
+    border-radius: 1px;
+}
+nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#homeP{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #2f3030;
+}
+#gradient{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to top right , rgba(46, 6, 247, 0.4), rgba(255,255,255, 0.4));
+    display: grid;
+    align-content: flex-end;
+}
+#surname{
+    margin-left: 70%;
+}
+#content > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+}
+h1{
+    width: 100px;
+}
+#content{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    color: white;
+    font-size: 30px;
+}
+#contact{
+    text-align: center;
+    height: 270px;
+    margin-top: 5%;
+    color: white;
+    background: #424240;
+    padding-top: 1%;
+    width: 79%;
+    margin-left: 12%;
+}
+#contact > div{
+    width: 80%;
+    margin-left: 10%;
+    height: 65%;
+}
+#contact > div > h2{
+    font-size: 30px;
+}
+#contact > div > div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 3%;
+}
+#contact > div > div > p{
+    margin-top: 3%;
+}
+#contact > div > div > p > a{
+    color: darkgray;
+    font-weight: bold;
+}
+#contact > div > div > p {
+    color: white;
+    font-weight: bold;
+}
+#contact > div > div > p > span{
+    color: darkgray;
+    font-weight: bold;
+}
+#edu{
+    margin-top: 8%;
+    height: 400px;
+    width: 70%;
+    display: grid;
+    margin-left: 12%;
+    background: #424240;
+    width: 75%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#edu > div > h2{
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+#edu > .text > .hs > p{
+    width: 310px;
+    text-align: justify;
+    color: darkgray;
+}
+#edu > .text > .college > p
+{
+    width: 310px;
+    text-align: justify;
+    color: darkgray;
+}
+#edu > .text {
+    display: flex;
+}
+#edu > .text > .hs{
+    width: 80%;
+}
+#edu > div:nth-of-type(1){
+    margin-top: 1%;
+}
+#edu > .text > div > h3{
+    color: white;
+}
+#edu > .text > div > h4{
+    color: white;
+}
+#edu > .text > .hs{
+    margin-left: 6%;
+}
+#edu > .text > .college{
+    margin-right: 6%;
+}
+#arrow{
+    width: 15px;
+    height: 15px;
+}
+#button{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    border: none;
+    height: 5%;
+    width: 3%;
+    /*background: #424240;*/
+    background-image: url("arrow-pointing-to-up.svg");
+    background-color: darkgray;
+    background-size: cover;
+    color: darkgray;
+    font-weight: bold;
+    border-radius: 7px;
+}
+#button:hover{
+    background-image: url("arrow-pointing-to-up.svg");
+    background-color: lightgrey;
+}
+footer{
+    height: 70px;
+    width: 100%;
+}
+footer > p{
+    margin-top: 4%;
+    text-align: center;
+    color: darkgray;
+    font-size: 12px;
+}
